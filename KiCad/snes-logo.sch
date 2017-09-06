@@ -1,0 +1,240 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:snes-logo-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "SNES Logo Platine"
+Date "2015-11-11"
+Rev "1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LED D1
+U 1 1 56433BC5
+P 4600 2950
+F 0 "D1" H 4600 3050 50  0000 C CNN
+F 1 "LED" H 4600 2850 50  0000 C CNN
+F 2 "LEDs:LED-0805" H 4600 2950 60  0001 C CNN
+F 3 "" H 4600 2950 60  0000 C CNN
+	1    4600 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D2
+U 1 1 56433CDA
+P 4600 3300
+F 0 "D2" H 4600 3400 50  0000 C CNN
+F 1 "LED" H 4600 3200 50  0000 C CNN
+F 2 "LEDs:LED-0805" H 4600 3300 60  0001 C CNN
+F 3 "" H 4600 3300 60  0000 C CNN
+	1    4600 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D3
+U 1 1 56433D17
+P 4600 3650
+F 0 "D3" H 4600 3750 50  0000 C CNN
+F 1 "LED" H 4600 3550 50  0000 C CNN
+F 2 "LEDs:LED-0805" H 4600 3650 60  0001 C CNN
+F 3 "" H 4600 3650 60  0000 C CNN
+	1    4600 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D4
+U 1 1 56433D50
+P 4600 4000
+F 0 "D4" H 4600 4100 50  0000 C CNN
+F 1 "LED" H 4600 3900 50  0000 C CNN
+F 2 "LEDs:LED-0805" H 4600 4000 60  0001 C CNN
+F 3 "" H 4600 4000 60  0000 C CNN
+	1    4600 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5643443B
+P 4100 2950
+F 0 "R1" V 4180 2950 50  0000 C CNN
+F 1 "R" V 4100 2950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4030 2950 30  0001 C CNN
+F 3 "" H 4100 2950 30  0000 C CNN
+	1    4100 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 564344DD
+P 4100 3300
+F 0 "R2" V 4180 3300 50  0000 C CNN
+F 1 "R" V 4100 3300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4030 3300 30  0001 C CNN
+F 3 "" H 4100 3300 30  0000 C CNN
+	1    4100 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 56434529
+P 4100 3650
+F 0 "R3" V 4180 3650 50  0000 C CNN
+F 1 "R" V 4100 3650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4030 3650 30  0001 C CNN
+F 3 "" H 4100 3650 30  0000 C CNN
+	1    4100 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L R R4
+U 1 1 56434564
+P 4100 4000
+F 0 "R4" V 4180 4000 50  0000 C CNN
+F 1 "R" V 4100 4000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4030 4000 30  0001 C CNN
+F 3 "" H 4100 4000 30  0000 C CNN
+	1    4100 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4250 2950 4400 2950
+Wire Wire Line
+	4250 3300 4400 3300
+Wire Wire Line
+	4250 3650 4400 3650
+Wire Wire Line
+	4250 4000 4400 4000
+$Comp
+L ATTINY45-S IC1
+U 1 1 56434852
+P 6700 3200
+F 0 "IC1" H 5550 3600 40  0000 C CNN
+F 1 "ATTINY45-S" H 7700 2800 40  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 7650 3200 35  0000 C CIN
+F 3 "" H 6700 3200 60  0000 C CNN
+	1    6700 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3050 4900 3050
+Wire Wire Line
+	4900 3050 4900 3300
+Wire Wire Line
+	4900 3300 4800 3300
+Wire Wire Line
+	5350 3150 5000 3150
+Wire Wire Line
+	5000 3150 5000 3650
+Wire Wire Line
+	5000 3650 4800 3650
+Wire Wire Line
+	5350 3250 5100 3250
+Wire Wire Line
+	5100 3250 5100 4000
+Wire Wire Line
+	5100 4000 4800 4000
+$Comp
+L GND #PWR01
+U 1 1 56434ABF
+P 3550 4300
+F 0 "#PWR01" H 3550 4050 50  0001 C CNN
+F 1 "GND" H 3550 4150 50  0000 C CNN
+F 2 "" H 3550 4300 60  0000 C CNN
+F 3 "" H 3550 4300 60  0000 C CNN
+	1    3550 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 2950 3550 4300
+Wire Wire Line
+	3550 4000 3950 4000
+Wire Wire Line
+	3550 3650 3950 3650
+Connection ~ 3550 4000
+Wire Wire Line
+	3550 3300 3950 3300
+Connection ~ 3550 3650
+Wire Wire Line
+	3550 2950 3950 2950
+Connection ~ 3550 3300
+$Comp
+L GND #PWR02
+U 1 1 56434D9F
+P 8200 3550
+F 0 "#PWR02" H 8200 3300 50  0001 C CNN
+F 1 "GND" H 8200 3400 50  0000 C CNN
+F 2 "" H 8200 3550 60  0000 C CNN
+F 3 "" H 8200 3550 60  0000 C CNN
+	1    8200 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 3450 8200 3450
+Wire Wire Line
+	8200 3350 8200 3550
+Wire Wire Line
+	8050 2950 8200 2950
+$Comp
+L C C1
+U 1 1 56434EC2
+P 8200 3200
+F 0 "C1" H 8225 3300 50  0000 L CNN
+F 1 "100µF" H 8225 3100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8238 3050 30  0001 C CNN
+F 3 "" H 8200 3200 60  0000 C CNN
+	1    8200 3200
+	1    0    0    -1  
+$EndComp
+Connection ~ 8200 2950
+Connection ~ 8200 3450
+Wire Wire Line
+	4800 2950 5350 2950
+$Comp
+L VCC #PWR03
+U 1 1 56434E06
+P 8200 2850
+F 0 "#PWR03" H 8200 2700 50  0001 C CNN
+F 1 "VCC" H 8200 3000 50  0000 C CNN
+F 2 "" H 8200 2850 60  0000 C CNN
+F 3 "" H 8200 2850 60  0000 C CNN
+	1    8200 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 2850 8200 3050
+$EndSCHEMATC
